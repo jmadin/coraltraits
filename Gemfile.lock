@@ -145,7 +145,9 @@ GEM
     marcel (0.3.2)
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -168,7 +170,8 @@ GEM
     progress_bar (1.2.0)
       highline (~> 1.6)
       options (~> 2.3.0)
-    puma (3.11.4)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     rack (2.0.5)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -314,7 +317,7 @@ DEPENDENCIES
   paper_trail
   pg (>= 0.18, < 2.0)
   progress_bar
-  puma (~> 3.11)
+  puma (~> 4.3)
   rails (~> 5.2.0)
   redcarpet
   roo
